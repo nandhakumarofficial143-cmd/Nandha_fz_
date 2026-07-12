@@ -246,24 +246,79 @@
                 <button>Buy Now</button>
             </a>
         </div>
+        
+        <div class="product-card">
+            <img src="god1.jpg" alt="Game 10">
+            <h2> GOD OF WAR 1</h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20this%20game!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+                <div class="product-card">
+            <img src="god2.jpg" alt="Game 10">
+            <h2> GOD OF WAR 2 </h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20this%20game!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <div class="product-card">
+            <img src="god3.jpg" alt="Game 10">
+            <h2> GOD OF WAR 3</h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20this%20game!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <div class="product-card">
+            <img src="god4.jpg" alt="Game 10">
+            <h2> GOD OF WAR 4</h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20this%20game!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <div class="product-card">
+            <img src="god5.jpg" alt="Game 10">
+            <h2> GOD OF WAR 5</h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20this%20game!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <div class="product-card">
+            <img src="nfs.jpg" alt="Game 10">
+            <h2> Need for Speed: Most Wanted</h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20this%20game!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+
 
     </div>
 
 <script>
 function searchGames() {
     let input = document.getElementById('gameSearch').value.toLowerCase();
-    let cards = document.getElementsByClassName('product-card'); // கேம் கார்டுகளின் கிளாஸ் பெயர்
+    let cards = document.getElementsByClassName('product-card'); 
 
     for (let i = 0; i < cards.length; i++) {
-        // கேம் கார்டுக்குள் இருக்கும் தலைப்பை (h3 அல்லது பெயர் இருக்கும் டேக்) எடுக்கிறோம்
+        
         let title = cards[i].getElementsByTagName('h3')[0] || cards[i].getElementsByTagName('h2')[0];
         
         if (title) {
             let textValue = title.textContent || title.innerText;
             if (textValue.toLowerCase().indexOf(input) > -1) {
-                cards[i].style.display = ""; // மேட்ச் ஆனால் காட்டும்
+                cards[i].style.display = ""; 
             } else {
-                cards[i].style.display = "none"; // மேட்ச் ஆகவில்லை என்றால் மறையும்
+                cards[i].style.display = "none"; 
             }
         }
     }
