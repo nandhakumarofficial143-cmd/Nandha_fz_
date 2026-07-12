@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nandha fz Game Store</title>
+    <style>
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start; 
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-bottom: 15px;
+}
+
+.nav-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.nav-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+.search-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+#gameSearch {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 25px; /* கார்னர் வளைவாக இருக்க */
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+#gameSearch:focus {
+    border-color: #2ecc71; /* கிளிக் பண்ணும்போது கிரீன் கலர் பார்டர் */
+    box-shadow: 0 2px 8px rgba(46, 204, 113, 0.2);
+}
+
+
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 10px; 
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            justify-items: center;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 5px;
+        }
+        
+        
+        .product-card { 
+            border: 1px solid #ccc; 
+            padding: 10px; 
+            width: 100%; 
+            background-color: white;
+            border-radius: 8px; 
+            box-shadow: 2px 2px 8px #ddd;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        .product-card img { 
+            width: 100%; 
+            height: auto;
+            border-radius: 4px; 
+        }
+        
+        .product-card h2 {
+            font-size: 15px;
+            margin: 10px 0 5px 0;
+            color: #000;
+        }
+        
+        .product-card p {
+            font-size: 13px;
+            margin: 5px 0;
+            color: #555;
+        }
+        
+        .product-card button { 
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            padding: 8px 12px; 
+            border-radius: 5px; 
+            cursor: pointer;
+            font-size: 13px;
+            width: 100%; 
+            font-weight: bold;
+        }
+        
+        .product-card button:hover { 
+            background-color: #218838; 
+        }
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+    <img src="https://i.ibb.co/XZ180P6k/profile.png"alt="Instagram Logo" class="nav-logo">
+    <span class="nav-name">nandha_fz_</span>
+    <!-- சர்ச் பார் -->
+<div class="search-container">
+    <input type="text" id="gameSearch" onkeyup="searchGames()" placeholder="🎮 search game ">
+    
+
+</div>
+
+</header>
+
+
+    <h1>nandha fz Game Store</h1>
+
+    <div class="container">
+        
+ 
+        <div class="product-card">
+            <img src="gta vi.jpg" alt="Game 1">
+            <h2>gta vice city</h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20GTA%20V!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        
+        <div class="product-card">
+            <img src="gta sa.jpg" alt="Game 2">
+            <h2>gta sanandreas</h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20God%20of%20War!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+     
+        <div class="product-card">
+            <img src="g3.jpg" alt="Game 3">
+            <h2>GTA III</h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20Spider-Man!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+       
+        <div class="product-card">
+            <img src="g4.jpg" alt="Game 4">
+            <h2>GTA IV</h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20GTA%20IV!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+       
+        <div class="product-card">
+            <img src="g5.jpg" alt="Game 5">
+            <h2>GTA V</h2>
+            <p>price : ₹99</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20Free%20Fire%20Pack!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+       
+        <div class="product-card">
+            <img src="ero.jpg" alt="Game 6">
+
+            <h2> Euro Truck 2 </h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20this%20game!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+       
+        <div class="product-card">
+            <img src="rdt1.jpg" alt="Game 7">
+            <h2>RDR 1</h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20this%20game!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+     
+        <div class="product-card">
+            <img src="rdr2.jpg" alt="Game 8">
+            <h2>RDR 2</h2>
+            <p>price : ₹99</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20this%20game!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+       
+        <div class="product-card">
+            <img src="sp1.jpg" alt="Game 9">
+            <h2> Spider-Man 1 </h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20this%20game!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+      
+        <div class="product-card">
+            <img src="sp2.jpg" alt="Game 10">
+            <h2> Spider-Man 2 </h2>
+            <p>price : ₹49</p>
+            <a href="https://wa.me/919790309978?text=Hi%20Nandha%20fz,%20I%20want%20to%20buy%20this%20game!" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+    </div>
+
+<script>
+function searchGames() {
+    let input = document.getElementById('gameSearch').value.toLowerCase();
+    let cards = document.getElementsByClassName('product-card'); // கேம் கார்டுகளின் கிளாஸ் பெயர்
+
+    for (let i = 0; i < cards.length; i++) {
+        // கேம் கார்டுக்குள் இருக்கும் தலைப்பை (h3 அல்லது பெயர் இருக்கும் டேக்) எடுக்கிறோம்
+        let title = cards[i].getElementsByTagName('h3')[0] || cards[i].getElementsByTagName('h2')[0];
+        
+        if (title) {
+            let textValue = title.textContent || title.innerText;
+            if (textValue.toLowerCase().indexOf(input) > -1) {
+                cards[i].style.display = ""; // மேட்ச் ஆனால் காட்டும்
+            } else {
+                cards[i].style.display = "none"; // மேட்ச் ஆகவில்லை என்றால் மறையும்
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>
